@@ -14,7 +14,7 @@ module.exports = function gulprsvg (options) {
     var Rsvg = options.Rsvg;
 
     function renderSvg (svg) {
-        return new Buffer(svg.render({
+        return Buffer.from(svg.render({
             format: options.format,
             width: options.width || svg.width * options.scale,
             height: options.height || svg.height * options.scale

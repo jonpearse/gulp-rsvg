@@ -27,7 +27,7 @@ test('should convert svg to png', function (t) {
         t.ok(~file.path.indexOf('png'), 'should be a png');
     });
 
-    stream.write(fixture(new Buffer(raw)));
+    stream.write(fixture(Buffer.from(raw)));
 });
 
 test('should convert svg to pdf', function (t) {
@@ -40,7 +40,7 @@ test('should convert svg to pdf', function (t) {
         t.ok(~file.path.indexOf('pdf'), 'should be a pdf');
     });
 
-    stream.write(fixture(new Buffer(raw)));
+    stream.write(fixture(Buffer.from(raw)));
 });
 
 test('should work the same with streams', function (t) {
