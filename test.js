@@ -4,12 +4,12 @@ var convert = require('./index'),
     test    = require('tape'),
     Stream  = require('stream'),
     fs      = require('fs'),
-    gutil   = require('gulp-util');
+    Vinyl   = require('vinyl');
 
 var raw = fs.readFileSync('./fixture.svg', 'utf-8');
 
 function fixture (contents) {
-    return new gutil.File({
+    return new Vinyl({
         contents: contents,
         cwd: __dirname,
         base: __dirname,

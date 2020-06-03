@@ -22,13 +22,14 @@
     "LICENSE-MIT"
   ],
   "dependencies": {
-    "gulp-util": "~3.0.3",
     "librsvg": "~0.7.0",
-    "object-assign": "^4.0.1"
+    "object-assign": "^4.0.1",
+    "replace-ext": "^2.0.0"
   },
   "devDependencies": {
     "tap-spec": "^4.1.0",
-    "tape": "^4.2.0"
+    "tape": "^4.2.0",
+    "vinyl": "^2.2.0"
   },
   "main": "index.js"
 }
